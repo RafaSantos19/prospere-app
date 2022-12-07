@@ -1,0 +1,27 @@
+.bg-nav{
+    background: rgb(54,4,88);
+    // background: linear-gradient(180deg, rgba(54,4,88,1) 0%, rgba(79,6,128,1) 80%, rgba(0,212,255,0) 100%);
+}
+
+.nav-hover{
+    a{
+        color: #f1f1f1;
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-decoration: none;
+        font-size: 18px;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 20px;
+    }
+
+    a:hover{
+        color: #FC0;
+        background: transparent;
+        box-shadow: 0 0 10px #8b44ff, 0 0 40px #6b00f7, 0 0 80px #FC0 ;
+        transition: 1s;
+    }   
+}

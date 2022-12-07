@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.main-login {
+    background: rgb(70, 30, 119);
+    background: linear-gradient(180deg, rgba(70, 30, 119, 1) 0%, rgba(51, 31, 77, 1) 49%, rgba(29, 18, 43, 1) 100%);
+}
+
+.login-title {
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    color: #e6f87e;
+    font-size: 3vw;
+}
+
+.card-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #47216b;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    input {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        background: #514869;
+        color: #f0ffffde;
+        font: 12pt;
+        outline: none;
+        box-shadow: 0px 10px 40px #00000056;
+    }
+
+    label {
+        color: #f0ffffde;
+        margin-bottom: 10px;
+    }
+
+    input::placeholder {
+        color: #f0ffff94;
+    }
+}
+
+.image-login {
+    max-height: 420px;
+}
+
+// $purple: #852bed;
+
+// .buttonico {
+//     position: relative;
+//     &::before,
+//     &::after {
+//       content: '';
+//       position: absolute;
+//     }
+
+//     transition: color 0.25s;
+
+//     &::before,
+//     &::after {
+//         border: 5px solid transparent;
+//     }
+//     &::before {
+//         top: 0;
+//         left: 0;
+//     }
+//     &::after {
+//         bottom: 0;
+//         right: 0;
+//     }
+
+//     &:hover {
+//         color: $purple;
+//         color: #255784;
+//         // background: #2196f3 !important;
+//         // box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3 ;
+//         // transition: 3s;
+//     }
+
+//     &:hover::before,
+//     &:hover::after {
+//         width: 100%;
+//         height: 100%;
+//     }
+
+//     &:hover::before {
+//         border-top-color: $purple; // Make borders visible
+//         border-right-color: $purple;
+//         transition:
+//             width 0.25s ease-out, // Width expands first
+//             height 0.25s ease-out 0.25s; // And then height
+//     }
+
+//     &:hover::after {
+//         border-bottom-color: $purple; // Make borders visible
+//         border-left-color: $purple;
+//         transition:
+//             border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+//             width 0.25s ease-out 0.5s, // And then exanding width
+//             height 0.25s ease-out 0.75s; // And finally height
+//     }
+// }

@@ -1,0 +1,22 @@
+.home{
+    background-image: url("../../assets/background_home.gif");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    height: 100%;
+}
+
+.card-bg {
+    height: 100%;
+    background-color: rgb(163, 30, 252);
+    position: relative;
+    border: solid 7.5px rgb(53, 3, 87);
+    border-radius: 40px;
+}
+
+.card-bg:hover{
+    .hover{
+        transform: scale(110%, 110%);
+        ms-transform: scale(110%, 110%);
+    }
+}

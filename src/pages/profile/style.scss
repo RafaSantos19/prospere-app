@@ -1,0 +1,22 @@
+.profile{
+    background-image: url("../../assets/background-profile.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    height: 100%;
+    background-color: grey;
+    color: #fff;
+    
+    h2{
+        text-shadow: #FC0 1px 0 10px;
+    }
+
+    img{
+       min-height: 150px;
+       max-height: 200px;
+    }
+    img:hover{
+        transform: scale(115%);
+    }
+
+}

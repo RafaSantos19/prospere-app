@@ -1,0 +1,29 @@
+.about{
+    // background: rgb(70,30,119);
+    color: #fFF;
+
+    h2{
+        color: rgb(245, 245, 191);
+        font-weight: 500;
+        text-shadow: #FC0 1px 0 10px;
+        text-align: center;
+    }
+    p{
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    background-image: url("../../assets/background_about.gif");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    // height: 100%;
+}
+
+// .txt-bg {
+//     height: 40%;
+//     background-color: rgb(163, 30, 252);
+//     position: absolute;
+//     border: solid 7.5px rgb(53, 3, 87);
+//     border-radius: 40px;
+// }

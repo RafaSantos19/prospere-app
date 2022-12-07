@@ -1,0 +1,66 @@
+// @import "compass/css3";
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+
+@mixin on-circle($item-count, $circle-size, $item-size) {  
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  padding: 0; 
+  list-style: none;
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%; 
+    left: 50%;
+    margin: calc(-1*calc($item-size / 2));
+    width:  $item-size;
+    height: $item-size;
+  
+    $angle: calc(360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: rotate($rot * 1deg) translate(calc($circle-size / 2)) rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+
+.circle-container {
+    @include on-circle($item-count: 8, $circle-size: 30vw, $item-size: 6em); 
+    margin: auto;
+    
+    .planet { 
+      display: block; 
+      max-width: 6rem;
+      min-width: none;
+      border-radius: 50%;
+      transition: .15s;
+
+      
+      &:hover,
+      &:active {
+        transform: scale(150%);
+      }
+    }
+    
+  }
+  
+.board{
+    background-image: url("../../assets/background-board.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }

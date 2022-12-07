@@ -1,0 +1,19 @@
+.card-group-bg{
+    background-color: rgb(96, 6, 156);
+    border: solid 10px rgba(255, 255, 255, 0.637);
+}
+
+.level{
+    background-image: url("../../../assets/background_level.gif");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+    height: 100%;
+}
+
+.card-body-level {
+    height: 100%;
+    background-color: rgb(163, 30, 252);
+    position: relative;
+    border-radius: 40px;
+}
